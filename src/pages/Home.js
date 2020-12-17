@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import "../App.css";
 import "./Home.css";
-import StaggeredName from "../components/StaggeredName/StaggeredName";
+import StaggeredNames from "../components/StaggeredNames/StaggeredNames";
 
 function Home() {
-  const [open, setOpen] = useState(true);
   return (
     <div className="home">
       <div className="personal-information-container">
@@ -12,11 +11,7 @@ function Home() {
           className="personal-information-item"
           style={{ backgroundColor: "blue" }}
         >
-          <StaggeredName open={open} onClick={() => setOpen((state) => !state)}>
-            <h1 className="firstname">MUHAMMAD</h1>
-            <h1 className="middlename">RAFADANA</h1>
-            <h1 className="lastname">MOUNTHEIRA</h1>
-          </StaggeredName>
+          <StaggeredNames />
         </div>
         <div className="personal-information-item">
           <p>HALO</p>

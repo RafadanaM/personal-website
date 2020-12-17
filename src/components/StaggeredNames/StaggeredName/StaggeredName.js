@@ -4,11 +4,10 @@ import React from "react";
 function StaggeredName({ open, children, ...props }) {
   const items = React.Children.toArray(children);
   const trail = useTrail(items.length, {
-    config: { mass: 5, tension: 2000, friction: 200 },
+    config: { mass: 1, tension: 280, friction: 120 },
     opacity: open ? 1 : 0,
-    x: open ? 0 : -1000,
-    height: open ? 110 : 0,
-    from: { opacity: 0, x: -1000, height: 0 },
+    x: open ? 0 : props.start,
+    from: { opacity: 0, x: props.start },
   });
   return (
     <div className="trails-main" {...props}>
