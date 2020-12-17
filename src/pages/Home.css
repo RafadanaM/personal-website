@@ -1,14 +1,34 @@
 .personal-information-container {
   display: flex;
+  direction: column;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .personal-information-item {
   padding: 10px;
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
   background-color: red;
   align-content: center;
   justify-content: space-around;
+}
+
+.firstname {
+  text-align: left;
+}
+
+.middlename {
+  text-align: center;
+}
+
+.lastname {
+  text-align: right;
+}
+
+@media (max-width: 960px) {
+  h1 {
+    font-size: 100%;
+  }
 }
