@@ -1,0 +1,14 @@
+.personal-information-container {
+  display: flex;
+  width: 100%;
+}
+
+.personal-information-item {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background-color: red;
+  align-content: center;
+  justify-content: space-around;
+}
