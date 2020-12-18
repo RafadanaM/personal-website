@@ -1,17 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import "../App.css";
-import "./Home.css";
+
+import classes from "./Home.module.css";
 import StaggeredNames from "../components/StaggeredNames/StaggeredNames";
 
 function Home() {
   return (
     <div className="home">
-      <div className="personal-information-container">
-        <div
-          className="personal-information-item"
-          style={{ backgroundColor: "blue" }}
-        >
-          <StaggeredNames />
+      <div className={classes.personalInformationContainer}>
+        <div className={classes.personalInformationItem}>
+          <StaggeredNames style={{ overflow: "hidden" }} />
         </div>
         <div className="personal-information-item">
           <p>HALO</p>

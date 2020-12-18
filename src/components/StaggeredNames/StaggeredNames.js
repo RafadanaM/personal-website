@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import StaggeredName from "./StaggeredName/StaggeredName";
+import classes from "./StaggeredNames.module.css";
 
 function StaggeredNames() {
   const [open, setOpen] = useState(true);
@@ -11,7 +12,7 @@ function StaggeredNames() {
         e
         onClick={() => setOpen((state) => !state)}
       >
-        <h1 className="firstname">MUHAMMAD</h1>
+        <h1 className={classes.firstname}>MUHAMMAD</h1>
       </StaggeredName>
       <StaggeredName
         open={open}
@@ -19,7 +20,7 @@ function StaggeredNames() {
         e
         onClick={() => setOpen((state) => !state)}
       >
-        <h1 className="middlename">RAFADANA</h1>
+        <h1 className={classes.middlename}>RAFADANA</h1>
       </StaggeredName>
       <StaggeredName
         open={open}
@@ -27,7 +28,7 @@ function StaggeredNames() {
         e
         onClick={() => setOpen((state) => !state)}
       >
-        <h1 className="lastname">MOUNTHEIRA</h1>
+        <h1 className={classes.lastname}>MOUNTHEIRA</h1>
       </StaggeredName>
     </>
   );

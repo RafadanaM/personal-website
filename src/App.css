@@ -9,6 +9,7 @@
 .services,
 .products,
 .sign-up {
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   height: 90vh;
