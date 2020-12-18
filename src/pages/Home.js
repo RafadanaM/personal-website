@@ -13,9 +13,12 @@ function Home() {
           className={classes.personalInformationItem}
           style={{ backgroundColor: "green" }}
         >
-          <Avatar round={true} name="Foo Bar" />
+          <Avatar size="300" round={true} name="Foo Bar" />
         </div>
-        <div className={classes.personalInformationItem}>
+        <div
+          className={classes.personalInformationItem}
+          style={{ flexGrow: 1 }}
+        >
           <StaggeredNames />
         </div>
 

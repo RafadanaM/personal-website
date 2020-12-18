@@ -4,7 +4,7 @@
   width: 100%;
   height: 100%;
   flex-wrap: wrap;
-
+  justify-content: space-around;
   background-color: yellow;
 }
 
@@ -12,7 +12,6 @@
   padding: 10px;
   display: flex;
   flex-direction: column;
-  width: 50%;
   background-color: #23263d;
   align-content: center;
   justify-content: space-around;
