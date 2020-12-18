@@ -1,3 +1,8 @@
+h1 {
+  color: #ffffff;
+  font-size: 2.5em;
+}
+
 .firstname {
   text-align: left;
 }
@@ -8,6 +13,10 @@
 
 .lastname {
   text-align: right;
+}
+
+.staggeredName {
+  margin-bottom: 35px;
 }
 
 @media (max-width: 960px) {

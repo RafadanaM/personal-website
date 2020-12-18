@@ -7,6 +7,7 @@ function StaggeredNames() {
   return (
     <>
       <StaggeredName
+        className={classes.staggeredName}
         open={open}
         start={-1000}
         e
@@ -15,6 +16,7 @@ function StaggeredNames() {
         <h1 className={classes.firstname}>MUHAMMAD</h1>
       </StaggeredName>
       <StaggeredName
+        className={classes.staggeredName}
         open={open}
         start={1000}
         e
@@ -23,6 +25,7 @@ function StaggeredNames() {
         <h1 className={classes.middlename}>RAFADANA</h1>
       </StaggeredName>
       <StaggeredName
+        className={classes.staggeredName}
         open={open}
         start={-1000}
         e

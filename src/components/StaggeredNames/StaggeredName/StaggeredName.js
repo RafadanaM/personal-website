@@ -1,5 +1,6 @@
 import { useTrail, a } from "react-spring";
 import React from "react";
+import classes from "./StaggeredName.module.css";
 
 function StaggeredName({ open, children, ...props }) {
   const items = React.Children.toArray(children);
@@ -10,7 +11,7 @@ function StaggeredName({ open, children, ...props }) {
     from: { opacity: 0, x: props.start },
   });
   return (
-    <div className="trails-main" {...props}>
+    <div {...props}>
       <div>
         {trail.map(({ x, height, ...rest }, index) => (
           <a.div

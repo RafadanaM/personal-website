@@ -1,16 +1,18 @@
 .personalInformationContainer {
   display: flex;
-  direction: column;
+  flex-direction: row;
   width: 100%;
-  height: 50%;
+  height: 100%;
   flex-wrap: wrap;
+
+  background-color: yellow;
 }
 
 .personalInformationItem {
   padding: 10px;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 50%;
   background-color: #23263d;
   align-content: center;
   justify-content: space-around;
