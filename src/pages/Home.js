@@ -26,19 +26,21 @@ function Home() {
           className={classes.personalInformationContainer}
           style={{ backgroundColor: "red" }}
         >
-          <p>HALO</p>
-          <p>HALO</p>
-          <p>HALO</p>
-          <p>HALO</p>
-          <p>HALO</p>
-          <p>HALO</p>
-          <p>HALO</p>
-          <p>HALO</p>
-          <p>HALO</p>
-          <p>HALO</p>
-          <p>HALO</p>
-          <p>HALO</p>
-          <p>HALO</p>
+          <div className={classes.personalInformationItem}>
+            <p>HALO</p>
+            <p>HALO</p>
+            <p>HALO</p>
+            <p>HALO</p>
+            <p>HALO</p>
+            <p>HALO</p>
+            <p>HALO</p>
+            <p>HALO</p>
+            <p>HALO</p>
+            <p>HALO</p>
+            <p>HALO</p>
+            <p>HALO</p>
+            <p>HALO</p>
+          </div>
         </div>
       </div>
     </div>

@@ -12,10 +12,22 @@
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
-  height: 90vh;
   align-items: center;
   justify-content: flex-start;
   font-size: 3rem;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: green;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: red;
+  border-radius: 20px;
 }
 
 /* .services {
