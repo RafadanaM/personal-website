@@ -27,10 +27,7 @@ function Home() {
         </div>
       </section>
       <section id="/about" className={classes.smooth}>
-        <div
-          className={classes.descriptionContainer}
-          style={{ backgroundColor: "blue" }}
-        >
+        <div className={classes.descriptionContainer}>
           <div
             className={classes.personalInformationItem}
             style={{ flexGrow: 1 }}
