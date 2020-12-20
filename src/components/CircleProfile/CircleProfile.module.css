@@ -1,0 +1,12 @@
+.imageDecoration {
+    display: inline-block;
+    width: 300px;
+    border: 1px solid white;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+@media (max-width: 499px) {
+    .imageDecoration {
+        width: 150px;}
+}

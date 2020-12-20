@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Inder', sans-serif;
 }
 
 .home,
@@ -10,7 +10,9 @@
 .products,
 .sign-up {
   overflow-x: hidden;
+  background-color: #191919;
   display: flex;
+  height: calc(100vh - 80px);
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
@@ -18,16 +20,22 @@
 }
 
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 5px;
 }
 
 ::-webkit-scrollbar-track {
-  background: green;
+  background: blue;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: red;
+  background-color: rgba(0,0,0,0.5);
   border-radius: 20px;
+}
+
+@media (max-width: 499px) {
+  .home {
+    height: calc(100vh - 50px);
+  }
 }
 
 /* .services {
