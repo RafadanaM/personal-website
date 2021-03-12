@@ -1,10 +1,11 @@
 import React from "react";
-import classes from "./CircleProfile.module.css"
+import classes from "./CircleProfile.module.css";
+import profile from "../../images/profile.jpg";
 
 function CircleProfile() {
-    return (
-        <img className={classes.imageDecoration} src="https://www.gravatar.com/avatar/a16a38cdfe8b2cbd38e8a56ab93238d3" alt="Profile"  />
-    );
+  return (
+    <img className={classes.imageDecoration} src={profile} alt="Profile" />
+  );
 }
 
 export default CircleProfile;

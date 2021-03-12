@@ -1,0 +1,18 @@
+.about {
+  display: flex;
+}
+.rotate {
+  writing-mode: vertical-rl;
+  color: white;
+  font-size: 8rem;
+  font-weight: bold;
+}
+.description {
+}
+
+@media (max-width: 499px) {
+  .rotate {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+}

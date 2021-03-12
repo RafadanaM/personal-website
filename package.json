@@ -15,8 +15,10 @@
     "react-scroll": "^1.8.1",
     "react-spring": "^8.0.27",
     "react-transition-group": "^4.4.1",
+    "react-visibility-sensor": "^5.1.1",
     "web-vitals": "^0.2.4"
   },
+  "main": "lib/index.js",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -42,6 +44,20 @@
     ]
   },
   "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
     "prettier": "^2.2.1"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties"
+    ]
   }
 }

@@ -1,17 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import classes from "../Home.module.css";
 import StaggeredName from "../../components/StaggeredNames/StaggeredName/StaggeredName";
 import CircleProfile from "../../components/CircleProfile/CircleProfile";
 import StaggeredNames from "../../components/StaggeredNames/StaggeredNames";
 
 function Introduction() {
-  const [open, setOpen] = useState(true);
-
   return (
     <section id="/" className={classes.smooth}>
       <div className={classes.personalInformationContainer}>
         <div className={classes.circleAvatarContainer}>
-          <StaggeredName open={open} start={1000} vertical={+true}>
+          <StaggeredName open={true} start={-1000} type={"vertical"}>
             <CircleProfile />
           </StaggeredName>
         </div>

@@ -10,12 +10,14 @@ function StaggeredNames() {
         className={classes.staggeredName}
         open={open}
         start={-1000}
+        type={"horizontal"}
         onClick={() => setOpen((state) => !state)}
       >
         <hr className={classes.lineTop} />
       </StaggeredName>
       <StaggeredName
         delay={750}
+        type={"horizontal"}
         className={classes.staggeredName}
         open={open}
         start={-1000}
@@ -25,6 +27,7 @@ function StaggeredNames() {
       </StaggeredName>
       <StaggeredName
         delay={750}
+        type={"horizontal"}
         className={classes.staggeredName}
         open={open}
         start={1000}
@@ -34,6 +37,7 @@ function StaggeredNames() {
       </StaggeredName>
       <StaggeredName
         delay={750}
+        type={"horizontal"}
         className={classes.staggeredName}
         open={open}
         start={-1000}
@@ -42,6 +46,7 @@ function StaggeredNames() {
         <h1 className={classes.lastname}>MOUNTHEIRA</h1>
       </StaggeredName>
       <StaggeredName
+        type={"horizontal"}
         className={classes.staggeredName}
         open={open}
         start={1000}

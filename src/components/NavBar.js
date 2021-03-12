@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { HashLink } from 'react-router-hash-link';
+import { HashLink } from "react-router-hash-link";
 import classes from "./Navbar.module.css";
 function NavBar() {
   const [click, setClick] = useState(false);
@@ -33,7 +33,9 @@ function NavBar() {
             }
           >
             <li className={classes.navItem}>
-              <HashLink smooth to ="/#/"
+              <HashLink
+                smooth
+                to="/#/"
                 className={classes.navLinks}
                 onClick={closeMobileMenu}
               >
@@ -41,7 +43,9 @@ function NavBar() {
               </HashLink>
             </li>
             <li className={classes.navItem}>
-              <HashLink smooth to ="#/about"
+              <HashLink
+                smooth
+                to="/#/about"
                 className={classes.navLinks}
                 onClick={closeMobileMenu}
               >

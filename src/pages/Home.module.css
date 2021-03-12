@@ -1,4 +1,5 @@
 .personalInformationContainer {
+  position: relative;
   display: flex;
   width: 100%;
   height: 100%;
@@ -6,14 +7,35 @@
   justify-content: space-around;
   align-content: center;
 }
+.personalInformationItem {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
 
 .descriptionContainer {
-  display: flex;
+  position: relative;
   width: 100%;
   height: 100%;
-  flex-wrap: wrap;
-  justify-content: space-around;
+}
+.descriptionInner {
+  padding: 96px 0 150px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1390px;
+  justify-content: flex-start;
+  margin: 0 auto;
+}
 
+.descriptionItem {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: white;
 }
 
 .circleAvatarContainer {
@@ -25,29 +47,25 @@
   justify-content: center;
 }
 
-.personalInformationItem {
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-}
 .smooth {
   position: relative;
   width: 100%;
-  height: calc(100vh - 80px);
+  height: 100vh;
+}
+.descriptionSection {
+  padding: 80px 0 87px;
 }
 
 @media (max-width: 499px) {
   .smooth {
     position: relative;
     width: 100%;
-    height: calc(100vh - 50px);
   }
 
   .description {
     font-size: 100%;
   }
+  .descriptionItem {
+    padding: 10px;
+  }
 }
-
-
