@@ -13,7 +13,13 @@ function NavBar() {
     <>
       <nav className={classes.navbar}>
         <div className={classes.navbarContainer}>
-          <Link to="/" className={classes.navbarLogo}>
+          <Link
+            to="/"
+            className={classes.navbarLogo}
+            onClick={() => {
+              window.location.reload();
+            }}
+          >
             Rafadana
           </Link>
           <div className={classes.menuIcon} onClick={handleClick}>
@@ -53,13 +59,14 @@ function NavBar() {
               </HashLink>
             </li>
             <li className={classes.navItem}>
-              <Link
+              <HashLink
+                smooth
                 to="/#/contact"
                 className={classes.navLinks}
                 onClick={closeMobileMenu}
               >
                 Contact
-              </Link>
+              </HashLink>
             </li>
           </ul>
         </div>
