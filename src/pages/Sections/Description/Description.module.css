@@ -7,12 +7,41 @@
   font-size: 8rem;
   font-weight: bold;
 }
-.description {
+
+.descriptionSection {
+  padding: 80px 0 87px;
+}
+
+.descriptionContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.descriptionInner {
+  padding: 96px 0 150px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1390px;
+  justify-content: flex-start;
+  margin: 0 auto;
+}
+
+.descriptionItem {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: white;
 }
 
 @media (max-width: 499px) {
   .rotate {
     font-size: 3rem;
     font-weight: bold;
+  }
+
+  .descriptionItem {
+    padding: 10px;
   }
 }

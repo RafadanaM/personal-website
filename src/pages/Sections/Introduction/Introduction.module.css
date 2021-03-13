@@ -23,17 +23,3 @@
   align-items: center;
   justify-content: center;
 }
-
-@media (max-width: 499px) {
-  .smooth {
-    position: relative;
-    width: 100%;
-  }
-
-  .description {
-    font-size: 100%;
-  }
-  .descriptionItem {
-    padding: 10px;
-  }
-}
