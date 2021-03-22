@@ -1,11 +1,13 @@
-.about {
-  display: flex;
-}
 .rotate {
-  writing-mode: vertical-rl;
+  vertical-align: top;
   color: white;
   font-size: 8rem;
   font-weight: bold;
+  transform: rotate(7deg);
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -moz-transform: rotate(90deg); /* Firefox */
+  -webkit-transform: rotate(90deg); /* Safari and Chrome */
+  -o-transform: rotate(90deg); /* Opera */
 }
 
 .descriptionSection {
@@ -16,6 +18,10 @@
   position: relative;
   width: 100%;
   height: 100%;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
 }
 .descriptionInner {
   padding: 96px 0 150px;
@@ -26,7 +32,12 @@
   justify-content: flex-start;
   margin: 0 auto;
 }
-
+.descriptionAbout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: white;
+}
 .descriptionItem {
   padding: 30px;
   display: flex;

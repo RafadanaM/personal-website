@@ -15,25 +15,24 @@ function Description() {
       className={`${classes.descriptionSection}  `}
     >
       <div className={classes.descriptionContainer}>
-        {console.log(isVisible)}
+        <div className={`${classes.descriptionAbout}`}>
+          <StaggeredName
+            type={"vertical"}
+            open={isVisible}
+            row={true ? 1 : 0}
+            delay={500}
+            start={20}
+            withheight={false ? 1 : 0}
+            className={classes.rotate}
+          >
+            <span>A</span>
+            <span>B</span>
+            <span>O</span>
+            <span>U</span>
+            <span>T</span>
+          </StaggeredName>
+        </div>
         <div className={classes.descriptionInner}>
-          <div className={`${classes.descriptionItem} ${classes.about}`}>
-            <StaggeredName
-              type={"vertical"}
-              open={isVisible}
-              row={true ? 1 : 0}
-              delay={500}
-              start={20}
-              withheight={false ? 1 : 0}
-              className={classes.rotate}
-            >
-              <span>A</span>
-              <span>B</span>
-              <span>O</span>
-              <span>U</span>
-              <span>T</span>
-            </StaggeredName>
-          </div>
           <div className={`${classes.descriptionItem}`}>
             <StaggeredName
               type={"horizontal"}

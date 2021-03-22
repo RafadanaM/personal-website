@@ -13,7 +13,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  height: calc(100vh - 80px);
+  flex: 1;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
@@ -41,7 +41,6 @@ section {
 
 @media (max-width: 499px) {
   .home {
-    height: calc(100vh - 50px);
     background-attachment: scroll;
   }
   ::-webkit-scrollbar {
