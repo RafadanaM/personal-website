@@ -23,13 +23,22 @@ function NavBar() {
             Rafadana
           </Link>
           <div className={classes.menuIcon} onClick={handleClick}>
-            <i
-              className={
-                click
-                  ? `fas fa-times ${classes.faTimes}`
-                  : `fas fa-bars ${classes.faBars}`
-              }
-            />
+            {click ? (
+              <svg viewBox="0 0 80 80" width="40" height="25">
+                <path
+                  stroke="white"
+                  fill="transparent"
+                  strokeWidth="15"
+                  d="M 20,15 L 80,65 M 80,15 L 20,65"
+                />
+              </svg>
+            ) : (
+              <svg viewBox="0 0 80 80" width="40" height="25" fill="white">
+                <rect width="100" height="15"></rect>
+                <rect y="30" width="100" height="15"></rect>
+                <rect y="60" width="100" height="15"></rect>
+              </svg>
+            )}
           </div>
           <ul
             className={

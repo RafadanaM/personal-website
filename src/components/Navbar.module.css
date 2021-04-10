@@ -56,10 +56,6 @@
   transition: all 0.2s ease-out;
 }
 
-.faBars {
-  color: #fff;
-}
-
 .navLinksMobile {
   display: none;
 }
@@ -70,7 +66,6 @@
 
 @media (max-width: 499px) {
   .navbarContainer {
-
     height: 50px;
   }
 
@@ -132,14 +127,9 @@
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-100%, 50%);
+    transform: translate(-40%, 50%);
     font-size: 1.5rem;
     cursor: pointer;
-  }
-
-  .faTimes {
-    color: #fff;
-
   }
 
   .navLinksMobile {
