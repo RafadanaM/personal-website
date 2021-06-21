@@ -1,21 +1,12 @@
 .contactContainer {
   display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   flex-wrap: wrap;
   justify-content: center;
-  align-content: center;
-}
-
-.contactItem {
-  color: white;
-  font-size: 48px;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  font-size: 48px;
 }
 
 .iconsContainer {
@@ -34,4 +25,20 @@
 
 .iconsContainer img:hover {
   cursor: pointer;
+}
+
+@media only screen and (max-width: 499px) {
+  .iconsContainer img {
+    margin: 10px;
+    height: 32px;
+    width: 32px;
+  }
+
+  .contactContainer {
+    font-size: 1em;
+  }
+
+  .iconsContainer {
+    margin-top: 60px;
+  }
 }

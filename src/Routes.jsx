@@ -7,12 +7,14 @@ import classes from "./Routes.module.css";
 
 function Routes() {
   return (
-    <Router className={classes.base}>
-      <NavBar />
-      <Switch>
-        <Route path="/" exact component={Home} />
-      </Switch>
-    </Router>
+    <div className={classes.base}>
+      <Router>
+        <NavBar />
+        <Switch>
+          <Route path="/" exact component={Home} />
+        </Switch>
+      </Router>
+    </div>
   );
 }
 
