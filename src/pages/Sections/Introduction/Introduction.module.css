@@ -1,18 +1,28 @@
+h1 {
+  color: #ffffff;
+  font-size: 2em;
+}
+
 .personalInformationContainer {
-  position: relative;
   display: flex;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   flex-wrap: wrap;
   justify-content: space-around;
   align-content: center;
 }
-.personalInformationItem {
+.name {
   padding: 30px;
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: center;
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.visible {
+  opacity: 1;
 }
 
 .circleAvatarContainer {
@@ -22,4 +32,23 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.initialName {
+  transition: all 1.5s ease;
+  margin-left: 200px;
+}
+
+.firstname {
+  text-align: left;
+  margin-left: 0;
+}
+
+.middlename {
+  text-align: center;
+  margin-left: 0;
+}
+
+.lastname {
+  text-align: right;
+  margin-left: 0;
 }

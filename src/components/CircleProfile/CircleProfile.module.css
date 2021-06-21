@@ -1,12 +1,19 @@
 .imageDecoration {
-    display: inline-block;
-    width: 300px;
-    border: 1px solid white;
-    border-radius: 50%;
-    object-fit: cover;
+  display: inline-block;
+  width: 300px;
+  border: 1px solid white;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: all 1s ease;
+  opacity: 0;
+}
+
+.appear {
+  opacity: 1;
 }
 
 @media (max-width: 499px) {
-    .imageDecoration {
-        width: 150px;}
+  .imageDecoration {
+    width: 150px;
+  }
 }

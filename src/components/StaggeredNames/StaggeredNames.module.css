@@ -1,8 +1,3 @@
-h1 {
-  color: #ffffff;
-  font-size: 2em;
-}
-
 .firstname {
   text-align: left;
 }
@@ -37,11 +32,9 @@ h1 {
   }
   .lineTop {
     margin-bottom: 10px;
-
   }
 
   .lineBottom {
     margin-top: 10px;
-
   }
 }

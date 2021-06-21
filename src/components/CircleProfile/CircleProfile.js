@@ -2,9 +2,11 @@ import React from "react";
 import classes from "./CircleProfile.module.css";
 import profile from "../../images/profile.jpg";
 
-function CircleProfile() {
+
+function CircleProfile({isVisible}) {
+  
   return (
-    <img className={classes.imageDecoration} src={profile} alt="Profile" />
+    <img  className={`${classes.imageDecoration} ${isVisible && classes.appear}`} src={profile} alt="Profile" />
   );
 }
 
