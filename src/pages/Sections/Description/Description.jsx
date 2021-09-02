@@ -6,7 +6,7 @@ function Description() {
 
   return (
     <section ref={ref} id="/about" className={`${classes.descriptionSection}`}>
-      <div className={`${classes.descriptionAbout}`}>
+      <div className={`${classes.descriptionLeft}`}>
         <div className={classes.rotate}>
           <span>A</span>
           <span>B</span>
@@ -15,7 +15,7 @@ function Description() {
           <span>T</span>
         </div>
       </div>
-      <div className={classes.descriptionInner}>
+      <div className={classes.descriptionRight}>
         <div className={`${classes.descriptionItem}`}>
           <h3>
             HI! I'm Muhammad Rafadana Mountheira, a Computer Science student at
@@ -32,6 +32,23 @@ function Description() {
           </div>
         </div>
       </div>
+      {/* <div className={classes.descriptionInner}>
+        <div className={`${classes.descriptionItem}`}>
+          <h3>
+            HI! I'm Muhammad Rafadana Mountheira, a Computer Science student at
+            University of Queensland.
+          </h3>
+          <br />
+          <h3>My hobbies include:</h3>
+          <div>
+            <ul>
+              <li>Football</li>
+              <li>Programming</li>
+              <li>Games</li>
+            </ul>
+          </div>
+        </div>
+      </div> */}
     </section>
   );
 }

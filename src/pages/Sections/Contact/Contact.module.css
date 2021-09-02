@@ -27,7 +27,7 @@
   cursor: pointer;
 }
 
-@media only screen and (max-width: 499px) {
+@media only screen and (max-width: 600px) {
   .iconsContainer img {
     margin: 10px;
     height: 32px;
@@ -35,6 +35,7 @@
   }
 
   .contactContainer {
+    height: 50vh;
     font-size: 1em;
   }
 

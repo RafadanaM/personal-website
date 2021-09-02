@@ -3,38 +3,38 @@ h1 {
   font-size: 2em;
 }
 
-.personalInformationContainer {
+.introductionSection {
   display: flex;
   width: 100%;
-  height: 100vh;
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: center;
+  height: 100vh;
 }
-.name {
-  padding: 30px;
+
+.introductionRight {
   display: flex;
+  flex: 1;
   flex-direction: column;
   align-content: center;
   justify-content: center;
   opacity: 0;
-  transition: all 2s ease;
+  padding: 30px;
+  transition: opacity 2s ease;
 }
 
 .visible {
   opacity: 1;
 }
 
-.circleAvatarContainer {
-  width: 40%;
+.introductionLeft {
+  flex: 1;
   padding: 30px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+
 .initialName {
-  transition: all 1.5s ease;
+  transition: opacity, margin 1.5s ease;
   margin-left: 200px;
 }
 
@@ -53,7 +53,24 @@ h1 {
   margin-left: 0;
 }
 
-@media only screen and (max-width: 499px) {
+@media only screen and (max-width: 600px) {
+  .introductionRight {
+    justify-content: flex-start;
+    padding: 8px 30px;
+  }
+
+  .introductionLeft {
+    padding: 8px 30px;
+  }
+
+  .firstname {
+    text-align: center;
+  }
+
+  .lastname {
+    text-align: center;
+  }
+
   h1 {
     font-size: 1.5em;
   }
