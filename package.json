@@ -18,7 +18,7 @@
   },
   "main": "lib/index.js",
   "scripts": {
-    "start": "craco start",
+    "start": "craco start && postcss src/css/app.css -o public/app.css",
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject"
@@ -47,6 +47,7 @@
     "@babel/plugin-proposal-class-properties": "^7.12.1",
     "@babel/preset-env": "^7.12.11",
     "@babel/preset-react": "^7.12.10",
+    "@types/autoprefixer": "^10.2.0",
     "autoprefixer": "^9.8.6",
     "postcss": "^7.0.36",
     "prettier": "^2.2.1",
