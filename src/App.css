@@ -28,7 +28,7 @@ section {
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 3px;
 }
 
 ::-webkit-scrollbar-track {
@@ -40,16 +40,15 @@ section {
   border-radius: 20px;
 }
 
-@media only screen and (max-width: 499px) {
+@media only screen and (max-width: 600px) {
   h1 {
-    color: red;
     font-size: 1em;
   }
   .home {
     background-attachment: scroll;
   }
   ::-webkit-scrollbar {
-    width: 2.5px;
+    width: 1px;
   }
   section {
     position: relative;
