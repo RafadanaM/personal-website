@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 
-import CircleProfile from "../../../components/CircleProfile/CircleProfile";
-import useOnScreen from "../../../components/UseOnScreen";
+import CircleProfile from "../../components/CircleProfile/CircleProfile";
+import useOnScreen from "../../components/UseOnScreen";
 
 function Introduction() {
   const ref = useRef();

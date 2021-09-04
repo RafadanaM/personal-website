@@ -3,11 +3,10 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import "./App.css";
 import React from "react";
-import classes from "./Routes.module.css";
 
 function Routes() {
   return (
-    <div className={classes.base}>
+    <div className="flex flex-col min-h-screen">
       <Router>
         <NavBar />
         <Switch>
