@@ -18,7 +18,7 @@ jobs:
           node-version: 14.x
 
       - name: install and build
-        run: yarn && yarn build --if-present
+        run: yarn && yarn build
 
       - name: 🚀 Deploy to netlify
         uses: netlify/actions/cli@master
