@@ -11,19 +11,28 @@ jobs:
     steps:
       - name: checkout source code
         uses: actions/checkout@v2
-      - name: Use Node.js 12.x
+        git 
+      - name: Use Node.js 14.x
         uses: actions/setup-node@v1
         with:
-          node-version: 12.x
-      - name: install and build
-        run: npm install && npm run build --if-present
+          node-version: 14.x
 
-      - name: Deploy to netlify
+      - name: install and build
+        run: npm ci && npm run build --if-present
+
+      - name: 🚀 Deploy to netlify
         uses: netlify/actions/cli@master
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-          TEST: ${{ secrets.TEST }}
+       with:
+          args: deploy -m 'v${{ steps.package-version.outputs.current-version}} ・ ${{ github.head_ref }}'
+      
+      - name: 👓 Netlify Preview URL
+        uses: unsplash/comment-on-pr@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OUTPUT: "This pull request is being automatically deployed to Netlify.\n\n🔍 Inspect: ${{ steps.deploy-netlify.outputs.NETLIFY_LOGS_URL }}\n✅ Preview: ${{ steps.deploy-netlify.outputs.NETLIFY_URL }}"
         with:
-          args: deploy --dir=build --prod
-          secrets: '["NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID", "TEST"]'
+          msg: ${{ env.OUTPUT }}
+          check_for_duplicate_msg: false
