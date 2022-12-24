@@ -1,0 +1,16 @@
+.avatar {
+    width: 376px;
+    height: 376px;
+    border-radius: 50%;
+    border: 8px solid var(--clr-accent-400);
+    line-height: 0;
+    position: relative;
+    transition-delay: 3s;
+
+}
+
+.avatar img {
+    width: 376px;
+    height: 376px;
+    border-radius: 50%;
+}

@@ -1,0 +1,40 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70%;
+}
+
+.title {}
+
+.content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.content img {
+    transition: all 500ms ease-out;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    width: 84px;
+    width: 84px;
+}
+
+.content img:hover {
+    transform: scale(1.2);
+    background-color: rgba(255, 255, 255, 0.3)
+}
+
+@media (max-width: 768px) {
+    .content {
+        gap: 2rem;
+    }
+
+    .content img {
+        width: 64px;
+        width: 64px;
+    }
+}

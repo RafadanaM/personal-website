@@ -1,0 +1,79 @@
+.container {
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.animationItem {
+    --initial-location: 4em;
+}
+
+.reverse {
+    --initial-location: -4em;
+}
+
+.animateInOut {
+    transform: translate3d(var(--initial-location), 0, 0);
+    animation: text-in 1.5s cubic-bezier(0.19, 1, 0.22, 1) 250ms forwards, text-out 750ms ease-in 3s forwards;
+}
+
+.animateInOutVertical {
+    transform: translate3d(0, var(--initial-location), 0);
+    animation: text-in-vertical 1.5s cubic-bezier(0.19, 1, 0.22, 1) 250ms forwards, text-out-vertical 750ms ease-in 3s forwards;
+}
+
+.animateIn {
+    transform: translate3d(var(--initial-location), 0, 0);
+    animation: text-in 1.5s cubic-bezier(0.19, 1, 0.22, 1) 250ms forwards;
+}
+
+.animateInVertical {
+    transform: translate3d(0, var(--initial-location), 0);
+    animation: text-in-vertical 1.5s cubic-bezier(0.19, 1, 0.22, 1) 250ms forwards;
+}
+
+@keyframes text-in {
+
+    0% {
+        transform: translate3d(var(--initial-location), 0, 0);
+    }
+
+    100% {
+        transform: translate3d(calc(var(--initial-location) + -1 * var(--initial-location)), 0, 0);
+    }
+
+}
+
+@keyframes text-out {
+    0% {
+        transform: translate3d(calc(var(--initial-location) + -1 * var(--initial-location)), 0, 0);
+    }
+
+    100% {
+        transform: translate3d(calc(-1 * var(--initial-location)), 0, 0);
+    }
+
+}
+
+@keyframes text-in-vertical {
+
+    0% {
+        transform: translate3d(0, var(--initial-location), 0);
+    }
+
+    100% {
+        transform: translate3d(0, calc(var(--initial-location) + -1 * var(--initial-location)), 0);
+    }
+
+}
+
+@keyframes text-out-vertical {
+    0% {
+        transform: translate3d(calc(var(--initial-location) + -1 * var(--initial-location)), 0, 0);
+    }
+
+    100% {
+        transform: translate3d(calc(-1 * var(--initial-location)), 0, 0);
+    }
+
+}

@@ -1,0 +1,23 @@
+.link {
+    display: inline-block;
+    transition: color 500ms;
+}
+
+.link:not(:first-child) {
+    margin: 0 0 0 1.5rem;
+}
+
+.link:hover {
+    color: var(--clr-accent-400);
+}
+
+@media (max-width: 768px) {
+    .link:not(:first-child) {
+        margin: 2rem 0 0 0;
+    }
+
+    .link:hover {
+        color: var(--clr-primary-400);
+    }
+
+}
