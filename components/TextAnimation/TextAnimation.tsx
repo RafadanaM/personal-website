@@ -40,6 +40,7 @@ const TextAnimation = ({
               className={`
             ${styles.container}
             ${styles.animationItem}
+            ${vertical ? styles.vertical : ""}
             ${
               animate
                 ? inOut
