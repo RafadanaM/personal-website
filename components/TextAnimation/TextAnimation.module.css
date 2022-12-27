@@ -6,6 +6,12 @@
 
 .animationItem {
     --initial-location: 4em;
+    transform: translate3d(var(--initial-location), 0, 0);
+
+}
+
+.vertical {
+    transform: translate3d(0, var(--initial-location), 0);
 }
 
 .reverse {
@@ -13,22 +19,18 @@
 }
 
 .animateInOut {
-    transform: translate3d(var(--initial-location), 0, 0);
     animation: text-in 1.5s cubic-bezier(0.19, 1, 0.22, 1) 250ms forwards, text-out 750ms ease-in 3s forwards;
 }
 
 .animateInOutVertical {
-    transform: translate3d(0, var(--initial-location), 0);
     animation: text-in-vertical 1.5s cubic-bezier(0.19, 1, 0.22, 1) 250ms forwards, text-out-vertical 750ms ease-in 3s forwards;
 }
 
 .animateIn {
-    transform: translate3d(var(--initial-location), 0, 0);
     animation: text-in 1.5s cubic-bezier(0.19, 1, 0.22, 1) 250ms forwards;
 }
 
 .animateInVertical {
-    transform: translate3d(0, var(--initial-location), 0);
     animation: text-in-vertical 1.5s cubic-bezier(0.19, 1, 0.22, 1) 250ms forwards;
 }
 
