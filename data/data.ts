@@ -1,4 +1,9 @@
-import { IContact, IImage, IPageSection } from "../interfaces/interfaces";
+import {
+  IContact,
+  IImage,
+  IPageSection,
+  IProject,
+} from "../interfaces/interfaces";
 import Home from "../components/sections/home/Home";
 import About from "../components/sections/about/About";
 import Project from "../components/sections/project/Project";
@@ -16,6 +21,9 @@ import mail from "../public/images/mail.svg";
 import twitter from "../public/images/twitter.svg";
 import linkedin from "../public/images/linkedin.svg";
 import github from "../public/images/github.svg";
+import gat from "../public/images/gat.png";
+import holo from "../public/images/holostream.png";
+import repo from "../public/images/repo.png";
 
 export const pageSections: IPageSection[] = [
   { id: "home", section: Home },
@@ -56,5 +64,30 @@ export const contacts: IContact[] = [
     id: "Twitter",
     src: twitter,
     href: "https://twitter.com/Rafadanaaa",
+  },
+];
+
+export const projects: IProject[] = [
+  {
+    name: "Guess The Anime Title",
+    description:
+      "Guess The Title! is a wordle-like hangman browser game that allows user to guess random anime title daily, made using React, NodeJs, TypeORM, and PostgeSQL",
+    image: gat,
+    url: "https://guesstheanimetitle.rafadana.com",
+    git: "https://github.com/RafadanaM/AnimeHangman",
+  },
+  {
+    name: "Hololive Stream Checker",
+    description:
+      "Hololive Checker is a website that provides hololive members live stream information using Web Scraping, made using NextJS, NodeJs, TypeORM, and PostgreSQL",
+    image: holo,
+    url: "https://hololivestreams.rafadana.com",
+    git: "https://github.com/RafadanaM/hololivechecker",
+  },
+  {
+    name: "Checkout my GitHub Repo!",
+    description: "You can see other projects on my GitHub!",
+    image: repo,
+    git: "https://github.com/RafadanaM",
   },
 ];

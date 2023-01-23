@@ -10,7 +10,7 @@ const Home = (props: IPageSectionProps) => {
     return (
       <span
         style={{ display: "inline-block" }}
-        className="text-neutral-100 fw-bold "
+        className="text-accent-400 fw-bold"
       >
         {children}
       </span>

@@ -1,7 +1,6 @@
 import styles from "./Contact.module.css";
 import { IPageSectionProps } from "../../../interfaces/interfaces";
 import Section from "../../layout/section/Section";
-import TextAnimation from "../../TextAnimation/TextAnimation";
 import { useRef } from "react";
 import useIsInView from "../../../hooks/useIsInView";
 import { contacts } from "../../../data/data";
@@ -19,9 +18,8 @@ const Contact = (props: IPageSectionProps) => {
         <Title text="CONTACT" animate={isInView} />
       </div>
       <div
-        className={`${styles.content} slide ${
-          isInView ? "slide-in" : "slide-out"
-        }`}
+        className={`${styles.content} slide
+         ${isInView ? "slide-in" : "slide-out"}`}
       >
         {contacts.map(({ id, src, href }) => (
           <Link key={id} href={href} rel="noopener noreferrer" target="_blank">

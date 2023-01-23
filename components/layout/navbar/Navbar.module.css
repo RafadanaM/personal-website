@@ -34,7 +34,7 @@
 
     .linkContainer {
         position: fixed;
-        background-color: var(--clr-accent-400);
+        background-color: rgb(var(--clr-accent-400));
         margin-left: 0;
         right: 0;
         top: 52px;

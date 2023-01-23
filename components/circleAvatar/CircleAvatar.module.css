@@ -2,7 +2,6 @@
     width: 376px;
     height: 376px;
     border-radius: 50%;
-    border: 8px solid var(--clr-accent-400);
     line-height: 0;
     position: relative;
     transition-delay: 3s;
@@ -13,4 +12,15 @@
     width: 376px;
     height: 376px;
     border-radius: 50%;
+}
+
+@media (max-width: 480px) {
+
+    .avatar,
+    .avatar img {
+        width: 276px;
+        height: 276px;
+    }
+
+
 }

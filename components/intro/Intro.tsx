@@ -19,7 +19,7 @@ const Intro = () => {
         <TextAnimation
           text="MUHAMMAD_RAFADANA_MOUNTHEIRA"
           wrap={(children) => (
-            <h2 className="text-neutral-100 fs-intro fw-bold">{children}</h2>
+            <h2 className="text-accent-400 fs-intro fw-bold">{children}</h2>
           )}
           inOut
         />
@@ -28,7 +28,7 @@ const Intro = () => {
           reverse
           inOut
           wrap={(children) => (
-            <span className="fw-bold fs-intro__sub text-accent-400">
+            <span className="fw-bold fs-intro__sub text-neutral-100">
               {children}
             </span>
           )}
