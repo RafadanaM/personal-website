@@ -26,8 +26,9 @@ const TextAnimation = ({
   wrap,
 }: ITextAnimation) => {
   return (
-    <Wrapper wrap={wrap}>
-      {Array.from(text).map((chr, idx) =>
+    <Wrapper<ReactNode>
+      wrap={wrap}
+      element={Array.from(text).map((chr, idx) =>
         chr === "_" ? (
           <br key={idx} />
         ) : (
@@ -61,7 +62,7 @@ const TextAnimation = ({
           </span>
         )
       )}
-    </Wrapper>
+    />
   );
 };
 

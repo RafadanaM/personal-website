@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image";
+
 export interface IPageSectionProps {
   id: string;
 }
@@ -14,4 +16,12 @@ export interface IImage {
 
 export interface IContact extends IImage {
   href: string;
+}
+
+export interface IProject {
+  name: string;
+  description: string;
+  image: StaticImageData;
+  git?: string;
+  url?: string;
 }

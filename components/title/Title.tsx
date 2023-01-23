@@ -12,7 +12,11 @@ const Title = ({ text, vertical = false, animate = true }: ITitle) => {
       text={text}
       vertical={vertical}
       wrap={(children) => (
-        <h2 className={`fs-title fw-bold ${vertical ? "vertical" : ""}`}>
+        <h2
+          className={`fs-title fw-bold text-accent-400 ${
+            vertical ? "vertical" : ""
+          }`}
+        >
           {children}
         </h2>
       )}

@@ -1,10 +1,10 @@
-interface IWrapper {
-  wrap?: (children: React.ReactNode) => JSX.Element;
-  children: React.ReactNode;
+interface IWrapper<T> {
+  wrap?: (element: T) => JSX.Element;
+  element: T;
 }
 
-const Wrapper = ({ wrap, children }: IWrapper) => {
-  return wrap ? wrap(children) : <>{children} </>;
+const Wrapper = <T,>({ wrap, element }: IWrapper<T>) => {
+  return wrap ? wrap(element) : <>{element} </>;
 };
 
 export default Wrapper;

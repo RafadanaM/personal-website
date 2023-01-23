@@ -12,6 +12,10 @@ const Navbar = () => {
   const toggleOpen = () => {
     setMenuOpen((prevState) => !prevState);
   };
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
   return (
     <header className={`bg-neutral-900 ${styles.navContainer}`}>
       <Container className={styles.navContent}>
@@ -34,6 +38,7 @@ const Navbar = () => {
                 href={`#${id}`}
                 text={id.toUpperCase()}
                 animate={menuOpen}
+                onLinkClick={closeMenu}
               />
             ))}
           </ul>
