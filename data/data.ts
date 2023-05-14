@@ -24,6 +24,7 @@ import github from "../public/images/github.svg";
 import gat from "../public/images/gat.png";
 import holo from "../public/images/holostream.png";
 import repo from "../public/images/repo.png";
+import xpend from "../public/images/xpend.png";
 
 export const pageSections: IPageSection[] = [
   { id: "home", section: Home },
@@ -75,6 +76,14 @@ export const projects: IProject[] = [
     image: gat,
     url: "https://guesstheanimetitle.rafadana.com",
     git: "https://github.com/RafadanaM/AnimeHangman",
+  },
+  {
+    name: "Xpend",
+    description:
+      "Xpend is an expense and income tracker made with React, Redux, NodeJs, TypeORM, and PostgreSQL",
+    image: xpend,
+    url: "https://xpend.rafadana.com",
+    git: "https://github.com/RafadanaM/xpend",
   },
   {
     name: "Hololive Stream Checker",
