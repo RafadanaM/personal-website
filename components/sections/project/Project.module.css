@@ -12,6 +12,7 @@
 }
 
 .carouselBg {
+    object-fit: cover;
     pointer-events: none;
     position: absolute;
     left: 0;
