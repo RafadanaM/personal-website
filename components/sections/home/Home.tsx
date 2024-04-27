@@ -19,16 +19,13 @@ const Home = (props: IPageSectionProps) => {
 
   return (
     <Section {...props} className={styles.home}>
-      <div className={styles.avatarContainer}>
-        <CircleAvatar />
-      </div>
-      <div className={styles.name}>
-        <h1>
-          <TextAnimation inDelay={3500} wrap={wrapper} text="MUHAMMAD" />
-          <TextAnimation inDelay={3500} wrap={wrapper} text="RAFADANA" />
-          <TextAnimation inDelay={3500} wrap={wrapper} text="MOUNTHEIRA" />
-        </h1>
-      </div>
+      <CircleAvatar />
+
+      <h1 className={styles.name}>
+        <TextAnimation inDelay={3500} wrap={wrapper} text="MUHAMMAD" />
+        <TextAnimation inDelay={3500} wrap={wrapper} text="RAFADANA" />
+        <TextAnimation inDelay={3500} wrap={wrapper} text="MOUNTHEIRA" />
+      </h1>
     </Section>
   );
 };

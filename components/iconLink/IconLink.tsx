@@ -18,9 +18,8 @@ const IconLink = ({
 }: IIconLink) => {
   return (
     <Link
-      className={`bg-primary-400 bg-opacity-50 ${styles.link} ${
-        linkClassName ?? ""
-      }`}
+      className={`bg-primary-400 bg-opacity-50 ${styles.link} ${linkClassName ?? ""
+        }`}
       {...rest}
       rel="noopener noreferrer"
       target="_blank"

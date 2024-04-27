@@ -6,13 +6,13 @@ const Section = forwardRef<HTMLElement, ComponentPropsWithoutRef<"section">>(
     return (
       <section
         ref={ref}
-        className={`${styles.container} ${className}`}
+        className={`container ${styles.section} ${className}`}
         {...rest}
       >
         {children}
       </section>
     );
-  }
+  },
 );
 
 Section.displayName = "Section";

@@ -81,17 +81,13 @@
   }
 }
 
-@media (max-width: 640px) {
-  .title {
-    left: 0.5rem;
-  }
-
+@media (max-width: 480px) {
   .description {
     font-size: var(--fs-300);
     min-height: 320px;
     margin-left: 0rem;
     padding-left: 5rem;
-    margin-top: 2.5rem;
+    margin-top: 0rem;
   }
 
   .content h3:first-child {

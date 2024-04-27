@@ -2,8 +2,14 @@ import { useState } from "react";
 import styles from "./Intro.module.css";
 import TextAnimation from "../TextAnimation/TextAnimation";
 
-const Intro = () => {
+interface IntroProps {
+  shouldRun?: boolean;
+}
+
+const Intro = ({ shouldRun }: IntroProps) => {
   const [animationEnded, setAnimationEnded] = useState(false);
+
+  if (!shouldRun) return null;
 
   return (
     <div
@@ -24,7 +30,7 @@ const Intro = () => {
           inOut
         />
         <TextAnimation
-          text="Rafadana Official Website"
+          text="Rafadana Personal Website"
           reverse
           inOut
           wrap={(children) => (

@@ -1,11 +1,15 @@
 .layout {
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    position: relative;
+  height: 100%;
+  position: relative;
 }
 
 .mainContent {
-    height: 100%;
-    margin-top: 64px;
+  height: 100%;
+  margin-top: 64px;
+}
+
+@media (max-width: 768px) {
+  .mainContent {
+    margin-top: 52px;
+  }
 }

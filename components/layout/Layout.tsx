@@ -43,7 +43,6 @@ const Layout = ({ children }: ILayout) => {
       </Head>
       <Navbar />
       <main className={styles.mainContent}>{children}</main>
-      <Intro />
     </div>
   );
 };

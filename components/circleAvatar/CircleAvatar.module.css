@@ -1,26 +1,23 @@
 .avatar {
-    width: 376px;
-    height: 376px;
-    border-radius: 50%;
-    line-height: 0;
-    position: relative;
-    transition-delay: 3s;
-
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  line-height: 0;
+  position: relative;
+  transition-delay: 3s;
 }
 
 .avatar img {
-    width: 376px;
-    height: 376px;
-    border-radius: 50%;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
 }
 
 @media (max-width: 480px) {
 
-    .avatar,
-    .avatar img {
-        width: 276px;
-        height: 276px;
-    }
-
-
+  .avatar,
+  .avatar img {
+    width: 200px;
+    height: 200px;
+  }
 }

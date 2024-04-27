@@ -1,4 +1,4 @@
-import { ComponentType, Fragment, HTMLProps, ReactNode } from "react";
+import { ReactNode } from "react";
 import Wrapper from "../wrapper/Wrapper";
 import styles from "./TextAnimation.module.css";
 
@@ -25,6 +25,15 @@ const TextAnimation = ({
   vertical = false,
   wrap,
 }: ITextAnimation) => {
+  const animation = animate
+    ? inOut
+      ? vertical
+        ? styles.animateInOutVertical
+        : styles.animateInOut
+      : vertical
+        ? styles.animateInVertical
+        : styles.animateIn
+    : "";
   return (
     <Wrapper<ReactNode>
       wrap={wrap}
@@ -42,25 +51,14 @@ const TextAnimation = ({
             ${styles.container}
             ${styles.animationItem}
             ${vertical ? styles.vertical : ""}
-            ${
-              animate
-                ? inOut
-                  ? vertical
-                    ? styles.animateInOutVertical
-                    : styles.animateInOut
-                  : vertical
-                  ? styles.animateInVertical
-                  : styles.animateIn
-                : ""
-            }
+            ${animation}
             ${reverse ? styles.reverse : ""}
-           
           `}
             >
               {chr === " " ? <>&nbsp;</> : chr}
             </span>
           </span>
-        )
+        ),
       )}
     />
   );

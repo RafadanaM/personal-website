@@ -3,8 +3,14 @@ interface ITitle {
   text: string;
   vertical?: boolean;
   animate?: boolean;
+  className?: string;
 }
-const Title = ({ text, vertical = false, animate = true }: ITitle) => {
+const Title = ({
+  text,
+  vertical = false,
+  animate = true,
+  className,
+}: ITitle) => {
   return (
     <TextAnimation
       inDelay={500}
@@ -13,9 +19,8 @@ const Title = ({ text, vertical = false, animate = true }: ITitle) => {
       vertical={vertical}
       wrap={(children) => (
         <h2
-          className={`fs-title fw-bold text-accent-400 ${
-            vertical ? "vertical" : ""
-          }`}
+          className={`fs-title fw-bold text-accent-400 ${vertical ? "vertical" : ""
+            } ${className || ""}`}
         >
           {children}
         </h2>

@@ -1,10 +1,11 @@
+import { useRef } from "react";
+import Image from "next/image";
 import styles from "./About.module.css";
+
 import { IPageSectionProps } from "../../../interfaces/interfaces";
 import Section from "../../layout/section/Section";
 import TextAnimation from "../../TextAnimation/TextAnimation";
-import { useRef } from "react";
 import useIsInView from "../../../hooks/useIsInView";
-import Image from "next/image";
 import { languages } from "../../../data/data";
 import Title from "../../title/Title";
 
@@ -16,16 +17,20 @@ const About = (props: IPageSectionProps) => {
 
   return (
     <Section {...props} ref={ref} className={styles.about}>
-      <Title text="ABOUT" animate={isInView} vertical />
+      <Title
+        text="ABOUT"
+        animate={isInView}
+        vertical
+        className={styles.title}
+      />
 
       <div className={`${styles.content} fs-desc`}>
         <div
-          className={`bg-neutral-900 text-neutral-100 fw-semibold ${styles.description} ${transition}`}
+          className={`bg-neutral-900 text-neutral-100 fw-semibold ${transition} ${styles.description}`}
         >
-          Hello! I&apos;m Muhammad Rafadana Mountheira, a Computer Science
-          student at University of Queensland. My interests includes but not
-          limited to Front-End development and Data Science. I like to spend my
-          free by exploring new technologies and sharpening my current skills.
+          {
+            "Hello! I'm Muhammad Rafadana Mountheira, a Computer Science student at University of Queensland. My interests includes but not limited to Front-End development and Data Science. I like to spend my free by exploring new technologies and sharpening my current skills."
+          }
           <br />
           <br />
           My hobbies are:
