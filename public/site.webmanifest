@@ -10,7 +10,7 @@
         {
             "src": "/android-chrome-256x256.png",
             "sizes": "256x256",
-            "type": "image/png"
+  "type": "image/png"
         }
     ],
     "theme_color": "#3499D9",
