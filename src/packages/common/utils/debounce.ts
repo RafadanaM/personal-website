@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function debounce<T extends (...args: any[]) => void>(fn: T, delay = 150) {
   let timeoutId: ReturnType<typeof setTimeout> | null = null;
 

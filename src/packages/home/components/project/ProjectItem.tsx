@@ -1,4 +1,3 @@
-import Token from "@/packages/ui/constants";
 import Link from "next/link";
 import Image, { StaticImageData } from "next/image";
 
