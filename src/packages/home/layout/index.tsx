@@ -22,8 +22,8 @@ function HomeLayout() {
         />
         <ExpandingRectangle
           transformOrigin="100% 50%"
-          rotation={45}
-          offset={{ top: "500vh", right: "-6rem" }}
+          rotation={55}
+          offset={{ bottom: 0, right: "-7rem" }}
         />
         <HeroSection />
         <AboutSection />
