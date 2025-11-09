@@ -20,11 +20,11 @@ function Navbar() {
 
         <nav className="hidden md:block">
           <ul className="flex items-center">
-            <NavLink label="home" href="#main" />
-            <NavLink label="about" href="#about" />
-            <NavLink label="career" href="#career" />
-            <NavLink label="projects" href="#projects" />
-            <NavLink label="contact" href="#contact" />
+            <NavLink label="home" href="/#main" />
+            <NavLink label="about" href="/#about" />
+            <NavLink label="career" href="/#career" />
+            <NavLink label="projects" href="/#projects" />
+            <NavLink label="contact" href="/#contact" />
           </ul>
         </nav>
 
@@ -43,7 +43,6 @@ function NavLink({ label, href }: INavLink) {
       <Link
         className="uppercase px-3 py-4 font-semibold text-lg hover:text-accent"
         href={href}
-        scroll={false}
       >
         {label}
       </Link>
