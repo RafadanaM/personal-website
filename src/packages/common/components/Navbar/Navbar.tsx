@@ -43,6 +43,7 @@ function NavLink({ label, href }: INavLink) {
       <Link
         className="uppercase px-3 py-4 font-semibold text-lg hover:text-accent"
         href={href}
+        scroll={false}
       >
         {label}
       </Link>
