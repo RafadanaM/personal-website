@@ -1,29 +1,29 @@
 @import "tailwindcss";
 
-@font-face {
-  font-family: "itc-avant-garde-gothic";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("/fonts/ITC Avant Garde Gothic CE Book.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "itc-avant-garde-gothic";
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("/fonts/ITC Avant Garde Gothic Medium.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "itc-avant-garde-gothic";
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url("/fonts/ITC Avant Garde Gothic Bold.woff2") format("woff2");
-}
-
+/* @font-face { */
+/*   font-family: "itc-avant-garde-gothic"; */
+/*   font-style: normal; */
+/*   font-weight: 400; */
+/*   font-display: swap; */
+/*   src: url("/fonts/ITC Avant Garde Gothic CE Book.woff2") format("woff2"); */
+/* } */
+/**/
+/* @font-face { */
+/*   font-family: "itc-avant-garde-gothic"; */
+/*   font-style: normal; */
+/*   font-weight: 500; */
+/*   font-display: swap; */
+/*   src: url("/fonts/ITC Avant Garde Gothic Medium.woff2") format("woff2"); */
+/* } */
+/**/
+/* @font-face { */
+/*   font-family: "itc-avant-garde-gothic"; */
+/*   font-style: normal; */
+/*   font-weight: 700; */
+/*   font-display: swap; */
+/*   src: url("/fonts/ITC Avant Garde Gothic Bold.woff2") format("woff2"); */
+/* } */
+/**/
 :root {
   --primary: #ffc83d;
   --secondary: #00a3ff;
@@ -69,12 +69,10 @@ html {
 body {
   background-color: var(--neutral-dark);
   color: var(--neutral-light);
-  font-family: "itc-avant-garde-gothic", Helvetica, sans-serif;
-  background-image: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0.1) 10%,
-    transparent 20%
-  );
+  font-family: var(---font-itc-avant-garde), Helvetica, sans-serif;
+  background-image: radial-gradient(circle,
+      rgba(255, 255, 255, 0.1) 10%,
+      transparent 20%);
   background-size: 10px 10px;
 }
 
